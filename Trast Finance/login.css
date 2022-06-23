@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom, transparent, rgb(36, 31, 63));
+}
+.login{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 35%;
+    border: 1px solid rgb(199, 92, 92);
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, transparent, rgb(31, 23, 23));
+}
+.login .h{
+    color: red;
+}
+.login input{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+.login input:focus{
+    outline: none;
+}
+.login button{
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, transparent, rgb(95, 59, 59));
+    color: wheat;
+    border: none;
+    border: 5px;
+}
+.login button:hover{
+    background: rgb(26, 204, 9);
+    cursor: pointer;
+}
+.login div{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-column-gap: 2%;
+    padding: 20px;
+}
+.login div a{
+    text-decoration: none;
+}
+.login img{
+    width: 30px;
+    padding: 20px;
+}
+.login h4{
+    font-size: 1.5rem;
+    color: black;
+    padding: 5px 0;
+}
+.login a{
+    color: rgb(70, 104, 155);
+    font-size: medium;
+}
+.login .but .btn1{
+    background: rgb(26, 204, 9);
+    padding: 5px;
+    border-radius: 10px;
+}
+.login .but .btn2{
+    background: rgb(94, 2, 97);
+    padding: 5px;
+    border-radius: 10px;
+}

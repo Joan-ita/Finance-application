@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    background: rgb(10, 10, 54);
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-column-gap: 1%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.gallery div{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.gallery div img{
+    width: inherit;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid olive;
+    border-radius: 10px;
+    transition: 2s;
+    filter: blur(10px);
+}
+.gallery div img:hover{
+    transform: rotate(5deg) scale(1.1);
+    filter: grayscale(50%);
+}
+.btn button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(10, 10, 54);
+    margin: 20px;
+    color: white;
+}
+.btn span{
+    font-weight: bolder;
+    color: rgb(15, 7, 7);
+}

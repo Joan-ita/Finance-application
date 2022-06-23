@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to right, transparent, rgb(70, 114, 59));
+}
+.main{
+    background: rgb(10, 10, 54);
+    color: white;
+    height: 30vh;
+    position: relative;
+    
+}
+.main div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.main div h1{
+    text-align: center;
+
+}
+.main div p{
+    text-align: justify;
+    padding: 20px 0;
+}
+.mission{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-column-gap: 1%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.mission div{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+.mission div h4{
+    text-align: center;
+}
+.meet{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 1%;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+.meet h4{
+    grid-column: 1 / 5;
+    font-size: 2rem;
+    color: rgb(75, 11, 11);
+    text-align: center;
+    padding: 20px 0;
+}
+.meet div img{
+    width: 80%;
+    height: 150px;
+    object-fit: contain;
+    border: 1px solid rgb(8, 8, 8);
+    border-radius: 10px;
+    transition: 2s;
+}
+.meet div img:hover{
+    transform: rotate(2deg) scale(1.1);
+    filter: grayscale(50%);
+}
+.meet div figcaption{
+    color: rgb(145, 61, 133);
+    text-align: center;
+
+}
+.meet div p{
+    padding:5px 10px;
+}
+.meet div p:last-child{
+    background: rgb(116, 30, 34);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: .4s;
+}
+.meet div p:last-child:hover{
+    background: rgb(10, 10, 54);
+    cursor: pointer;
+}

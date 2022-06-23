@@ -1,0 +1,122 @@
+/*clear default settings */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 70%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom, transparent, rgb(36, 31, 63));
+}
+.divided{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 2%;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    border-radius: 2px;
+    border: 2px solid brown;
+    background: linear-gradient(to bottom, transparent, rgb(31, 23, 23));
+}
+.divided .left{
+    background: url("images/intern.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.divided .left h4{
+    color: rgb(224, 11, 11);
+}
+.divided .left div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    border-radius: 5px;
+}
+.divided .left button{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.divided .left .btn1{
+    background: rgb(26, 204, 9);
+    padding: 5px;
+}
+.divided .left .btn2{
+    background: rgb(94, 2, 97);
+    padding: 5px;
+}
+.divided .left .btn3{
+    background: rgb(224, 11, 11);
+    padding: 5px;
+}
+.divided .left div p{
+    text-align: justify;
+    padding: 10px 0;
+}
+.divided .left::before{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+}
+.divided .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    background: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: crimson;
+}
+.divided .right h4{
+    font-size: 1.5rem;
+    color: rgb(57, 56, 56);
+    padding: 10px 0;
+}
+.divided .right img{
+    width: 15%;
+    margin-bottom: 10px;
+}
+.divided .right input{
+    width: 95%;
+    margin: 5px;
+    padding: 7px;
+}
+.divided .right form{
+    width: 80%;
+    margin: auto;
+}
+.divided .right button{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(224, 11, 11);
+    color: white;
+}
+
+
